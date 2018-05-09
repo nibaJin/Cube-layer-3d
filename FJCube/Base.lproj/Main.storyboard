@@ -20,7 +20,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c55-cU-xMF">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.8862745098" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLi-xC-fXy">
                                 <rect key="frame" x="281" y="573" width="44" height="44"/>
@@ -34,6 +34,24 @@
                                     <action selector="fjAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ze-pL-a3G"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckN-R1-Xaz" customClass="FJReflectionView" customModule="FJCube" customModuleProvider="target">
+                                <rect key="frame" x="235" y="581" width="36" height="36"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒花儿icon1" translatesAutoresizingMaskIntoConstraints="NO" id="VLq-Yr-uwg">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.6705882353" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="77G-BS-YX1"/>
+                                    <constraint firstAttribute="trailing" secondItem="VLq-Yr-uwg" secondAttribute="trailing" id="IYn-LY-4dA"/>
+                                    <constraint firstAttribute="height" constant="36" id="aTk-64-Vap"/>
+                                    <constraint firstItem="VLq-Yr-uwg" firstAttribute="top" secondItem="ckN-R1-Xaz" secondAttribute="top" id="bKH-r6-Ka5"/>
+                                    <constraint firstAttribute="bottom" secondItem="VLq-Yr-uwg" secondAttribute="bottom" id="hEc-VJ-bEi"/>
+                                    <constraint firstItem="VLq-Yr-uwg" firstAttribute="leading" secondItem="ckN-R1-Xaz" secondAttribute="leading" id="jnl-Xe-fsL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -43,6 +61,8 @@
                             <constraint firstItem="c55-cU-xMF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IOb-xQ-3OV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c55-cU-xMF" secondAttribute="bottom" id="QGD-zq-lZr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c55-cU-xMF" secondAttribute="trailing" id="SVh-LI-xJR"/>
+                            <constraint firstItem="nLi-xC-fXy" firstAttribute="bottom" secondItem="ckN-R1-Xaz" secondAttribute="bottom" id="XWU-fa-1co"/>
+                            <constraint firstItem="nLi-xC-fXy" firstAttribute="leading" secondItem="ckN-R1-Xaz" secondAttribute="trailing" constant="10" id="l0V-Ga-FnQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -181,4 +201,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="酒花儿icon1" width="36" height="36"/>
+    </resources>
 </document>
